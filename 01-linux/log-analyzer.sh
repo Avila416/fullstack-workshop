@@ -20,3 +20,6 @@ echo ""
 
 echo "=== Recent Errors ==="
 grep -i 'error' "$LOG_FILE" | tail -3
+
+echo "=== Unique IP Addresses ==="
+grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' "$LOG_FILE" | sort -u
