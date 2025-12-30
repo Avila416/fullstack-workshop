@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header h3 {
+    font-weight: normal;
+    margin-top: 5px;
+    color: #cbd5e1;
+}
+
+header hr {
+    width: 60%;
+    margin: 15px auto;
+    border: 1px solid #374151;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #93c5fd;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #1f2937;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+#about img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 50%;
+    border: 2px solid #1f2937;
+}
+
+#about ul {
+    margin-left: 20px;
+}
+
+#about li {
+    margin: 5px 0;
+}
+
+article {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #1d4ed8;
+    margin-bottom: 8px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+form {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+section a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f2937;
+    color: #cbd5e1;
+    margin-top: 30px;
+}
