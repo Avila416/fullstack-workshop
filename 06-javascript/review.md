@@ -1,13 +1,13 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-31 11:16
+**Review Date:** 2025-12-31 11:29
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 0
+**Files submitted:** 4
 
 ### Relevance Check
 
@@ -15,13 +15,67 @@ Unable to check - no exercise file
 
 ### Code Review
 
+📄 **counter.html**
+   Path: `06-javascript/challenge-01/counter.html`
+   Lines: 22
+
+    - ✅ Has `<!DOCTYPE html>`
+    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 4/5**
+
+📄 **counter.js**
+   Path: `06-javascript/challenge-01/counter.js`
+   Lines: 154
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses modern array methods
+
+   **Score: 4/5**
+
+📄 **form-validator.html**
+   Path: `06-javascript/challenge-02/form-validator.html`
+   Lines: 35
+
+    - ✅ Has `<!DOCTYPE html>`
+    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 4/5**
+
+📄 **form-validator.js**
+   Path: `06-javascript/challenge-02/form-validator.js`
+   Lines: 84
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - 💡 Consider using arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 2/5**
+
+### Topic Score: 14 / 20 (70%)
+
 ---
 
 ## Challenge
 
-**Status:** ⚠️ Not submitted
+**Status:** ✅ Submitted (2 files)
 
-Submit to: `06-javascript/challenges/`
+### Challenge Relevance Check
+
+❌ **Submission does NOT match exercise requirements**
+   Expected keywords: task manager todo add delete
+   Found only: add 
+   **Please review the exercise requirements and resubmit**
+
 
 ---
 
