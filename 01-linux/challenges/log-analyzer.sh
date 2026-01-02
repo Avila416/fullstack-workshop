@@ -16,7 +16,7 @@ echo "File: $LOG_FILE"
 echo ""
 
 #total lines
-total_lines=$(awk 'END {print NR}' "$LOG_FILE")
+total_lines=$(wc -l < "$LOG_FILE")
 echo "Total Lines: $total_lines"
 echo "-------------------------------"
 
