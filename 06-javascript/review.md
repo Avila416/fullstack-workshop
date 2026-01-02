@@ -1,13 +1,13 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-31 11:29
+**Review Date:** 2026-01-02 14:02
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 4
+**Files submitted:** 10
 
 ### Relevance Check
 
@@ -61,7 +61,78 @@ Unable to check - no exercise file
 
    **Score: 2/5**
 
-### Topic Score: 14 / 20 (70%)
+📄 **shopping-cart.html**
+   Path: `06-javascript/challenge-08/shopping-cart.html`
+   Lines: 11
+
+    - ✅ Has `<!DOCTYPE html>`
+    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 4/5**
+
+📄 **shopping-cart.js**
+   Path: `06-javascript/challenge-08/shopping-cart.js`
+   Lines: 108
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - 💡 Consider using arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 2/5**
+
+📄 **library.js**
+   Path: `06-javascript/challenge-09/library.js`
+   Lines: 127
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - 💡 Consider using arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 2/5**
+
+📄 **type-checker.js**
+   Path: `06-javascript/challenge-12/type-checker.js`
+   Lines: 59
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 3/5**
+
+📄 **password-validator.js**
+   Path: `06-javascript/challenge-13/password-validator.js`
+   Lines: 58
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ❌ Uses loose equality (`==`) 1 times
+    - 💡 Consider using arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 1/5**
+
+📄 **compose.js**
+   Path: `06-javascript/challenge-14/compose.js`
+   Lines: 37
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - 💡 Consider using template literals for string interpolation
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 3/5**
+
+### Topic Score: 29 / 50 (58%)
 
 ---
 
