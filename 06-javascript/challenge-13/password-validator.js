@@ -1,6 +1,6 @@
-function validatePassword(password){
-    let errors = [];
-    let suggestions = [];
+const validatePassword = (password) => {
+    const errors = [];
+    const suggestions = [];
     let score = 100;
 
     const commonPasswords = [
@@ -11,49 +11,62 @@ function validatePassword(password){
         "letmein"
     ];
 
-    if(password.length<8){
-        errors.push("Too short (minimum 8 characters)");
-        suggestions.push("use atleast 8 characters");
-        score -= 20;
-    }
+    const rules = [
+        {
+            check: password.length >= 8,
+            error: "Too short (minimum 8 characters)",
+            suggestion: "Use at least 8 characters",
+            penalty: 20
+        },
+        {
+            check: /[A-Z]/.test(password),
+            error: "No uppercase letter",
+            suggestion: "Add at least one uppercase letter",
+            penalty: 15
+        },
+        {
+            check: /[a-z]/.test(password),
+            error: "No lowercase letter",
+            suggestion: "Add at least one lowercase letter",
+            penalty: 15
+        },
+        {
+            check: /[0-9]/.test(password),
+            error: "No number",
+            suggestion: "Add at least one number",
+            penalty: 15
+        },
+        {
+            check: /[!@#$%^&*()_+\-=]/.test(password),
+            error: "No special character",
+            suggestion: "Add at least one special character",
+            penalty: 15
+        }
+    ];
 
-    if(! /[A-Z]/.test(password)){
-        errors.push("No uppercase letter");
-        suggestions.push("Add atleast one uppercase letter");
-        score -= 15;
-    }
+    rules.forEach(rule => {
+        if (!rule.check) {
+            errors.push(rule.error);
+            suggestions.push(rule.suggestion);
+            score -= rule.penalty;
+        }
+    });
 
-    if(! /[a-z]/.test(password)){
-        errors.push("No lowercase letter");
-        suggestions.push("Add atleast one lowercase letter");
-        score -= 15;
-    }
-    if(! /[0-9]/.test(password)){
-        errors.push("No number");
-        suggestions.push("Add atleast one number");
-        score -= 15;
-    }
-    if(! /[!@#$%^&*()_+-=]/.test(password)){
-        errors.push("No special character");
-        suggestions.push("Add atleast special character");
-        score -= 15;
-
-    }
-    if(commonPasswords.includes(password.toLowerCase())){
-        errors.push("Common passwords");
-        suggestions.push("Avoid Common Passwords");
+    if (commonPasswords.includes(password.toLowerCase())) {
+        errors.push("Common password used");
+        suggestions.push(`Avoid common passwords like "${password}"`);
         score -= 30;
     }
-    if(score<0){
-        score=0;
-    }
-    return {
-        isValid : errors.length==0 && score>=70,
-        score:score,
-        suggestions:suggestions,
-        errors:errors
-    };
 
-}
+    score = Math.max(score, 0);
+
+    return {
+        isValid: errors.length === 0 && score >= 70,
+        score,
+        errors,
+        suggestions
+    };
+};
+
 console.log(validatePassword("qwerty"));
 console.log(validatePassword("MyPassword@123"));
